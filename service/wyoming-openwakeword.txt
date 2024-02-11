@@ -1,0 +1,12 @@
+[Unit]
+Description=Wyoming openWakeWord
+
+[Service]
+Type=simple
+ExecStart=/home/satellite/start_wakeword.sh
+WorkingDirectory=/home/satellite/wyoming-openwakeword
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=default.target
